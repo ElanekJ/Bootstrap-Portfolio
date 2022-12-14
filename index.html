@@ -5,33 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="../Bootstrap-Portfolio/css/style.css">
     <title>Challenge03</title>
 </head>
 
 <body>
 
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <h1>Jozef Elias</h1>
-        <div class="collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About me <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1>Jozef Elias</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#card1">About me <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#card2">Work</a>
+        <a class="nav-item nav-link" href="#myMail">Contact</a>
+      </div>
+    </div>
+  </nav>
   
       <!-- Jumbotron -->
     <div class="jumbotron rockBackground">
@@ -49,64 +42,50 @@
         <div class="row showsNear">
   
           <!-- Card 1 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="images/show1.jpg" class="card-img-top" alt="...">
+          <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="card1">
+              <img src="" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Melbourne, Australia</h5>
-                <p class="card-text">Come see Slipknot unlease their new album "We Are Not Your Kind"</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">About me</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi architecto quos facere repellendus cum quae ullam, quisquam adipisci sunt nesciunt soluta nemo mollitia nulla ad dolorum vitae magnam dicta nostrum.</p>
+                <a href="#" class="btn btn-primary">More...</a>
               </div>
             </div>
           </div>
           <!-- End card 1 -->
   
           <!-- Card 2 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="images/show2.jpg" class="card-img-top" alt="...">
+          <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
+            <div class="card" id="card2">
+              <img src="" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Chicago, Illinois</h5>
-                <p class="card-text">Metallica finally returns to the big stage in Chicago Illinois</p>
-                <a href="#" class="btn btn-primary">Buy Tickets</a>
+                <h5 class="card-title">Work</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus possimus nobis commodi impedit nulla ab tenetur temporibus, sed illo omnis animi minima aut nostrum officiis similique, facere qui placeat.</p>
+                <a href="#myMail" class="btn btn-primary">Contact</a>
               </div>
             </div>
           </div>
           <!-- End card 2 -->
   
-          <!-- Card 3 -->
-          <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
-            <div class="card">
-              <img src="images/show3.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Long Beach, California</h5>
-                <p class="card-text">The Red Hot Chili Peppers take the stage at the Honda Center</p>
-                <a href="#" class="btn btn-primary">Buy Tickets</a>
-              </div>
-            </div>
-          </div>
-          <!-- End card 3 -->
-        </div>
-      </div>
-      <!-- End cards -->
+         
 
       <!-- Content -->
     <div class="container-fluid content">
-        <h2 class="sectionHeading">Why we're better</h2>
+        <h2 class="sectionHeading">Why me</h2>
   
         <!-- Row 1 -->
         <div class="row valueProp">
           <div class="sideAccent">
           </div>
           <div class="imageContainer col-3">
-            <img src="images/assistance.png">
+            <img src="">
           </div>
           <div class="text col-8">
-            <h3>We are always here to help!</h3>
+            <h3>Always here to help!</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
             </p>
-            <a href="#" class="btn btn-primary">Contact Us
+            <a href="#myMail" class="btn btn-primary">Contact
             </a>
           </div>
         </div>
@@ -117,7 +96,7 @@
           <div class="sideAccent">
           </div>
           <div class="imageContainer col-3">
-            <img src="images/refund.png">
+            <img src="">
           </div>
           <div class="text col-8">
             <h3>The best prices!</h3>
@@ -134,14 +113,14 @@
           <div class="sideAccent">
           </div>
           <div class="imageContainer col-3">
-            <img src="images/mail-box.png">
+            <img src="">
           </div>
           <div class="text col-8">
-            <h3>The best shows!</h3>
+            <h3>More</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
             </p>
-            <a href="#" class="btn btn-primary">More shows</a>
+            <a href="#" class="btn btn-primary">More..</a>
           </div>
         </div>
         <!-- End row 3 -->
@@ -149,18 +128,22 @@
       </div>
       <!-- End content -->
 
-       <!-- Footer -->
-    <footer class="emailContain">
-        <form>
-          <h3 class="sectionHeading">Join Our Mailing List</h3>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-          </div>
-          <button type="submit" class="btn btn-primary">Sign Up</button>
-        </form>
-      </footer>
+       <!-- Footer --><form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
       <!-- End footer -->
   
   
